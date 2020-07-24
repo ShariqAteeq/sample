@@ -22,12 +22,12 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Installing Node
-      uses: action/setup-node@v2-beta
+      uses: actions/setup-node@v2-beta
       with:
         node-version: 12  
 
     # Runs a set of commands using the runners shell
     - name: Installing Surge
-      run:  npm install -g surge
+      run:  npm install --global surge
     - name: Depployng using surge
       run: surge ./ awful-garden.surge.sh --token ${{ secrets.SAMPLE_TOKEN }}
