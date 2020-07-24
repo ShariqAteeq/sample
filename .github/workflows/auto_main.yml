@@ -30,4 +30,4 @@ jobs:
     - name: Installing Surge
       run:  npm install -g surge
     - name: Depployng using surge
-      run: surge ./ http://awful-garden.surge.sh/ --token ${{ secrets.SAMPLE_TOKEN }}
+      run: surge ./ awful-garden.surge.sh --token ${{ secrets.SAMPLE_TOKEN }}
